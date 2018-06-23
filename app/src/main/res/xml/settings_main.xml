@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title">
+
+    <ListPreference
+        android:defaultValue="@string/settings_order_by_default"
+        android:entries="@array/settings_order_by_labels"
+        android:entryValues="@array/settings_order_by_values"
+        android:key="@string/settings_order_by_key"
+        android:title="@string/settings_order_by_label" />
+
+    <EditTextPreference
+        android:defaultValue="@string/settings_min_date_default"
+        android:hint="2010-01-01"
+        android:inputType="date"
+        android:key="@string/settings_min_date_key"
+        android:selectAllOnFocus="true"
+        android:textColorHint="@android:color/darker_gray"
+        android:title="@string/settings_min_date_label" />
+
+</PreferenceScreen>
